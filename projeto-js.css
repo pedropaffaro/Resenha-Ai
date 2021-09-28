@@ -1,0 +1,378 @@
+body{
+   font-family: 'Roboto', sans-serif;
+   background-color: rgb(238, 238, 238); 
+   margin: 0px;
+   padding: 0px;
+}
+::selection {
+   background: #d4b7bb; /* WebKit e Blink */
+}
+a{
+   text-decoration: none;
+}
+hr{
+   border-color: #999393;
+}
+h1, h2, h3{
+   font-family: 'Playfair Display', serif;
+}
+strong{
+   color: #57bc90;
+}
+/* Menu */
+.container-menu ul{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   list-style: none;
+   background-color: #892736;
+   margin: 0%;
+   height: 3.5rem;
+}
+.container-menu ul li{
+   padding-inline-end: 2rem;
+}
+.container-menu ul li a{
+   color: #e2e2e2;
+   font-size: 1.3em;
+}
+.resenha{
+   font-family: 'Playfair Display', serif;
+   font-size: 1.2rem;
+}
+.menu-part{
+   display: flex;
+   flex-direction: row;
+}
+.active a{
+   text-decoration: underline 2px; 
+   text-decoration-color: #57bc90;
+   text-underline-offset: 4px;
+}
+/* Corpo */ 
+#container{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   margin-top: -1rem;
+   padding: 3rem;
+   background-color: #892736;
+   color: #e2e2e2;
+}
+.center-box{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.title-index{
+   font-size: 3rem;
+}
+.text-index{
+   font-size: 1.3rem;
+}
+.img-index{
+   filter: invert(100%);
+   width: 15rem;
+}
+.section{
+   font-size: 1.2em;
+}
+.title-princ{
+   margin-top: 2rem;
+   margin-left: 3rem;
+   margin-right: 2rem;
+}
+.ultimas-resenhas{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   place-items: center;
+   margin-bottom: 2rem;
+}
+.img-ultimas-resenhas{
+   width: 15rem;
+   height: 12rem;
+   transition: 0.5s;
+   border-radius: 5px;
+}
+.img-ultimas-resenhas:hover{
+   opacity: 0.7;
+}
+.text-resenhas{
+   color: black;
+}
+.text-resenhas:hover{
+   text-decoration: underline 2px; 
+   text-decoration-color: #5de078;
+   text-underline-offset: 4px;
+}
+.corpo-resenha{
+   border-radius: 5px;
+   margin-left: 3rem;
+   margin-right: 3rem;
+   margin-top: 2rem;
+   display: grid;
+   grid-template-columns: 3fr 1fr;
+   font-size: 1.2em;
+}
+.text-resenha{
+   background-color: ghostwhite;
+   border-radius: 5px;
+   margin-right: 2rem;
+   margin-bottom: 2rem;
+   padding-bottom: 2rem;
+   text-align: justify;
+}
+.div-img-resenha{
+   width: 100%;
+   height: 50vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.img-pag-resenha{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   border-top-right-radius: 5px;
+   border-top-left-radius: 5px;
+}
+.div-text-resenha{
+   margin-left: 2rem;
+   margin-right: 2rem;
+}
+.section-autor{
+   margin-bottom: 2rem;
+   margin-right: 2rem;
+   padding-top: 0.8rem;
+   background: url('Fotos/background-autor.jpg') repeat;
+   border-radius: 5px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   font-size: 1.2rem;
+}
+.flex-row{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+}
+.flex-row img{
+   margin-left: 0.5rem;
+}
+.margin--{
+   margin-top: -0.5rem;
+}
+.div-img-autor img{
+   border: solid 3px #892736;
+   border-radius: 50%;
+   width: 5rem;
+   height: 5rem;
+   object-fit: cover;
+}
+.text-autor{
+   text-align: center;
+}
+.text-autor div{
+   line-height: 0px;
+}
+.box-outras-resenhas{
+   border-radius: 5px;
+   background-color: ghostwhite;
+   padding-left: 2rem;
+   padding-right: 2rem;
+   margin-bottom: 2rem;
+   height: 13rem;
+}
+.li-outras-resenhas{
+   list-style: none;
+   margin-left: -1.5rem;
+}
+.li-outras-resenhas li{
+   padding-bottom: 1rem;
+}
+.li-outras-resenhas li a{
+   color: #892736;
+}
+
+/* Footer */
+.footer{
+   background-color: #551f27;
+   color: #999393;
+   padding: 0.5rem;
+   padding-left: 5rem;
+   padding-right: 5rem;
+}
+.text-footer{
+   font-size: 0.9rem;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   align-items: center;
+   padding-bottom: 1rem;
+}
+.center-items-column{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+/* Form */
+#container-center{
+   width: 100vw;
+   height: 100vh;
+   background: ghostwhite;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+#containerforms{
+   background: ghostwhite;
+   box-shadow: 0 5px 15px gray;
+   border-radius: 5px;
+   width: 20rem;
+   height: 30rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column; 
+
+   animation-name: slide;
+   animation-duration: 1.5s;
+   animation-fill-mode: forwards;
+}
+.titulo-forms{
+   display: grid;
+   place-items: center;
+   font-weight: 30px;
+   font-family: sans-serif;
+   color: #892736;
+}
+.form-items{
+   margin-top: 2rem;
+   margin-left: 2rem;
+   margin-right: 2rem;
+   display: flex;
+   flex-direction: column;
+}
+.forgot{
+   margin-bottom: 0px;
+   color: #892736;
+   text-decoration: none;
+}
+.logo-input-forms{
+   display: flex;
+   flex-direction: row;
+}
+.img-logo-forms{
+   width: 1.5rem;
+   height: 1.5rem;
+   margin-top: 1.1rem;
+   border-bottom: solid 1px #892736;
+}
+::-webkit-input-placeholder{
+   color: #892736;
+}
+#username, #senha{
+   margin-top: 0.5rem;
+   padding-left: 1rem;
+   border: none;
+   width: 13rem;
+   background-color: transparent;
+   color: #892736;
+   border-bottom: solid 1px #892736;
+}
+input[type="checkbox"]{
+   accent-color: #892736;
+}
+.notifi-forgot{
+   display: flex;
+   flex-direction: row;
+   margin-top: 2rem;
+   justify-content: space-between;
+   color: #892736;
+}
+.form-footer{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   margin-top: 2rem;
+   margin-left: 1rem;
+   margin-right: 1rem;
+}
+#entrar{
+   width: 7rem;
+   height: 2.3rem;
+   font-size: 1rem;
+   margin-top: 0.5rem;
+   margin-bottom: 1.5rem;
+   background-color: transparent;
+   color: #892736;
+   border: solid 1px #892736;
+   border-radius: 5px;
+ 
+   transition: 0.5s;
+}
+#entrar:hover{
+   background-color: #892736;
+   color: ghostwhite;
+   border-color: #892736;
+}
+#voltar{
+   width: 7rem;
+   height: 2rem;
+   font-size: 1rem;
+   margin-bottom: 1.5rem;
+   background-color: #892736;
+   color: ghostwhite;
+   border: solid 1px #892736;
+   border-radius: 5px;
+}
+@keyframes slide{
+   from{
+      transform: translateX(-200px);
+      opacity: 0;
+   }
+   to{
+      transform: translateX(0);
+      opacity: 1;
+   }
+}
+
+/* Media 1 */
+@media (min-width: 481px) and (max-width: 720px){
+   #container{
+      grid-template-columns: 1fr;
+   }
+   .img-index{
+      padding-top: 2rem;
+   }
+   .title-princ{
+      text-align: center;
+   }
+   .ultimas-resenhas{
+      grid-template-columns: 2fr;
+      place-items: center;
+   }
+   .corpo-resenha{
+      grid-template-columns: 1fr;
+   }
+   .text-resenha{
+      margin-right: 0px;
+   }
+   .section-autor{
+      margin-right: 0px;
+   }
+}
+@media (min-width: 721px) and (max-width: 1080px){
+   #container{
+      grid-template-columns: 1fr;
+   }
+   .img-index{
+      padding-top: 2rem;
+   }
+   .ultimas-resenhas{
+      grid-template-columns: 1fr 1fr;
+   }
+}
